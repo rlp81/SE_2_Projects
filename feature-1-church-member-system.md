@@ -1,4 +1,4 @@
-# Feature: Title
+# Feature: Church Member System
 
 **Feature ID:** 1
 **Branch pattern:** `feature/1-church-member-system`  
@@ -112,7 +112,6 @@
 *   **Given** Person is not in system
 *   **When** employee or person adds the person to the system
 *   **Then** Person is a member in system
-*   **And** extra result if needed
 
 #### Scenario: Failure to create Member
 *   **Given** Person is not in system
@@ -135,13 +134,13 @@
 *   **Given** Member is in Church Member Database 
 *   **When** Member does not attend Church
 *   **Then** Attendance is logged
+
 ### US-1.4: Church Member Profile
 
 #### Scenario: Access Member Data
 *   **Given** Member is in Church Member Database
 *   **When** employee needs to access personal member data
 *   **Then** Person data is available
-*   **And** extra result if needed
 
 #### Scenario: Failure to Access Member Data
 *   **Given** Member is in Church Member Database
@@ -154,10 +153,8 @@
 *   **Given** Driver route is created
 *   **When** driver requests the route
 *   **Then** system responds with a route of addresses
-*   **And** extra result if needed
 
 #### Scenario: Faulty Route Request
 *   **Given** Driver route is created
 *   **When** driver requests the route
 *   **Then** system responds with incorrect route or no route
-
